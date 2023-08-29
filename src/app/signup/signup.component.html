@@ -1,0 +1,173 @@
+<mat-card style="width: 50%; height: 35rem; background-color: antiquewhite; text-align: center; margin-top: 5%; margin-left: 20%;">
+    <mat-card-header >
+      <mat-card-title style="text-align: center; color: rgb(126, 10, 39);">Sign Up</mat-card-title>
+    </mat-card-header>
+    <mat-card-content>
+      <form [formGroup]="signupForm" (ngSubmit)="onSubmit()">
+  
+
+        <div class="row">
+        <!-- First Name Input -->
+        <mat-form-field appearance="outline">
+          <mat-label>First Name</mat-label>
+          <input matInput formControlName="fname">
+          <mat-error *ngIf="signupForm?.get('fname')?.hasError('required')">
+            First name is required
+          </mat-error>
+        </mat-form-field>
+  
+        <!-- Last Name Input -->
+        <mat-form-field appearance="outline" style="margin-left: 3%;">
+          <mat-label>Last Name</mat-label>
+          <input matInput formControlName="lname">
+          <mat-error *ngIf="signupForm?.get('lname')?.hasError('required')">
+            Last name is required
+          </mat-error>
+        </mat-form-field>
+
+    </div>
+
+
+    <div class="row">
+  
+        <!-- Email Input -->
+        <mat-form-field appearance="outline">
+          <mat-label>Email</mat-label>
+          <input matInput type="email" formControlName="email">
+          <mat-error *ngIf="signupForm?.get('email')?.hasError('required')">
+            Email is required
+          </mat-error>
+          <mat-error *ngIf="signupForm?.get('email')?.hasError('email')">
+            Invalid email format
+          </mat-error>
+        </mat-form-field>
+  
+        <!-- Password Input -->
+        <mat-form-field appearance="outline" style="margin-left: 3%;">
+          <mat-label>Password</mat-label>
+          <input matInput type="password" formControlName="password">
+          <mat-error *ngIf="signupForm?.get('password')?.hasError('required')">
+            Password is required
+          </mat-error>
+        </mat-form-field>
+
+    </div>
+
+    <div class="row">
+  
+        <!-- DOB Input -->
+        <mat-form-field appearance="outline" class="Dob">
+          <mat-label>Date of Birth</mat-label>
+          <input matInput [matDatepicker]="picker" formControlName="DOB">
+          <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+          <mat-datepicker #picker></mat-datepicker>
+          <mat-error *ngIf="signupForm?.get('DOB')?.hasError('required')">
+            Date of Birth is required
+          </mat-error>
+        </mat-form-field>
+  
+        <!-- Education Input -->
+        <mat-form-field appearance="outline" style="margin-left: 3%;">
+          <mat-label>Education</mat-label>
+          <input matInput formControlName="education">
+          <mat-error *ngIf="signupForm?.get('education')?.hasError('required')">
+            Education is required
+          </mat-error>
+        </mat-form-field>
+
+    </div>
+
+
+
+    <div class="row">
+  
+        <!-- Experience Input -->
+        <mat-form-field appearance="outline">
+          <mat-label>Experience</mat-label>
+          <input matInput formControlName="experience">
+          <mat-error *ngIf="signupForm?.get('experience')?.hasError('required')">
+            Experience is required
+          </mat-error>
+        </mat-form-field>
+  
+        <!-- Mobile Number Input -->
+        <mat-form-field appearance="outline" style="margin-left: 3%;">
+          <mat-label>Mobile Number</mat-label>
+          <input matInput formControlName="mobile">
+          <mat-error *ngIf="signupForm?.get('mobile')?.hasError('required')">
+            Mobile number is required
+          </mat-error>
+        </mat-form-field>
+
+    </div>
+
+
+    <div class="row">
+  
+        <!-- Gender Input -->
+        <mat-form-field appearance="outline">
+          <mat-label>Gender</mat-label>
+          <mat-select formControlName="gender">
+            <mat-option value="male">Male</mat-option>
+            <mat-option value="female">Female</mat-option>
+            <mat-option value="other">Other</mat-option>
+          </mat-select>
+          <mat-error *ngIf="signupForm?.get('gender')?.hasError('required')">
+            Gender is required
+          </mat-error>
+        </mat-form-field>
+  
+        <!-- Country Input -->
+        <mat-form-field appearance="outline" style="margin-left: 3%;">
+          <mat-label>Country</mat-label>
+          <input matInput formControlName="country">
+          <mat-error *ngIf="signupForm?.get('country')?.hasError('required')">
+            Country is required
+          </mat-error>
+        </mat-form-field>
+    </div>
+
+    <div class="row">
+  
+        <!-- Submit Button -->
+        <div class="action-buttons">
+          <button mat-raised-button color="primary" type="submit" [disabled]="!signupForm.valid">Sign Up</button>
+        </div>
+    </div>
+
+  
+        
+      </form>
+      <span>
+        Already have Account   <a routerLink="/login">LogIn Here </a>
+      </span>
+    </mat-card-content>
+
+
+    <div style="width: 50%; height: 35rem; background-color: antiquewhite; text-align: center; margin-top: 5%; margin-left: 20%;">
+            <div class="icon-wrapper">
+              <mat-icon *ngIf="isLoading">autorenew</mat-icon>
+            </div>
+    </div>
+
+
+  </mat-card>
+  
+
+  
+<style>
+  .icon-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+mat-icon {
+  font-size: 48px;
+  height: 48px;
+  width: 48px;
+}
+
+</style>
+

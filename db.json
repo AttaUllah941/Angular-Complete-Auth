@@ -1,0 +1,162 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    },
+    {
+      "fname": "Atta",
+      "lname": "Ullah",
+      "email": "attakhanniazi941@gmail.com",
+      "password": "123sfdsdf",
+      "DOB": "2016-02-02T19:00:00.000Z",
+      "education": "Bs ",
+      "experience": "2 years ",
+      "mobile": "03150094608",
+      "gender": "male",
+      "country": "Pakistan",
+      "id": 2
+    },
+    {
+      "fname": "Salman",
+      "lname": "khan",
+      "email": "salmankhan@gmail.com",
+      "password": "salman123",
+      "DOB": "2023-08-01T19:00:00.000Z",
+      "education": "Bs ",
+      "experience": "2 years ",
+      "mobile": "03150094608",
+      "gender": "male",
+      "country": "Pakistan",
+      "id": 3
+    },
+    {
+      "fname": "Roman",
+      "lname": "Khan",
+      "email": "salmankhan@gmail.com",
+      "password": "salman123",
+      "DOB": "2023-08-07T19:00:00.000Z",
+      "education": "bs ",
+      "experience": "wd",
+      "mobile": "dq",
+      "gender": "male",
+      "country": "Pakistan",
+      "id": 4
+    },
+    {
+      "fname": "well",
+      "lname": "time",
+      "email": "welltime@gmail.com",
+      "password": "123",
+      "DOB": "2022-12-31T19:00:00.000Z",
+      "education": "Bs",
+      "experience": "2",
+      "mobile": "03150094608",
+      "gender": "male",
+      "country": "Pakistan",
+      "id": 5
+    },
+    {
+      "fname": "React_JS",
+      "lname": "Projects",
+      "email": "shakeel@gmail.com",
+      "password": "qdqwd",
+      "DOB": "2023-07-31T19:00:00.000Z",
+      "education": "Bs ",
+      "experience": "csg",
+      "mobile": "03150094608",
+      "gender": "male",
+      "country": "Pakistan",
+      "id": 6
+    },
+    {
+      "fname": "shakeel",
+      "lname": "khan",
+      "email": "shakeel@gmail.com",
+      "password": "qdqwd",
+      "DOB": "2023-07-31T19:00:00.000Z",
+      "education": "bs",
+      "experience": "q",
+      "mobile": "03150094608",
+      "gender": "male",
+      "country": "Pakistan",
+      "id": 7
+    },
+    {
+      "fname": "Welltime ",
+      "lname": "Ltd",
+      "email": "welltime@gmail.com",
+      "password": "welltime",
+      "DOB": "2023-08-16T19:00:00.000Z",
+      "education": "3",
+      "experience": "5",
+      "mobile": "09234233423035",
+      "gender": "male",
+      "country": "pakistan",
+      "id": 8
+    },
+    {
+      "fname": "welltime",
+      "lname": "ltd",
+      "email": "welltime123@gmail.com",
+      "password": "welltime123@gmail.com",
+      "DOB": "2023-08-09T19:00:00.000Z",
+      "education": "f",
+      "experience": "e",
+      "mobile": "7594337543985",
+      "gender": "male",
+      "country": "pak",
+      "id": 9
+    },
+    {
+      "fname": "khan",
+      "lname": "afghan",
+      "email": "afghan@gmail.com",
+      "password": "ndkjfdsl",
+      "DOB": "2023-08-08T19:00:00.000Z",
+      "education": "frw",
+      "experience": "fwef",
+      "mobile": "57239574957834",
+      "gender": "male",
+      "country": "pak",
+      "id": 10
+    },
+    {
+      "fname": "g",
+      "lname": "gerkk",
+      "email": "attakhan@gmail.com",
+      "password": "nvskjdhsd",
+      "DOB": "2023-08-08T19:00:00.000Z",
+      "education": "sasdfijio",
+      "experience": "afnejf",
+      "mobile": "feoqfho",
+      "gender": "male",
+      "country": "klfkjlf",
+      "id": 11
+    },
+    {
+      "fname": "aata",
+      "lname": "waqdf",
+      "email": "dqwd@gmail.com",
+      "password": "sdfs",
+      "DOB": "2023-08-01T19:00:00.000Z",
+      "education": "dfds",
+      "experience": "2",
+      "mobile": "79345794356",
+      "gender": "male",
+      "country": "pakistan",
+      "id": 12
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}
