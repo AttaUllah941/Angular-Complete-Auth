@@ -19,14 +19,22 @@ import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
 import { MatIconModule } from '@angular/material/icon';
 import { MatCard } from '@angular/material/card';
 import { HTTP_INTERCEPTORS } from '@angular/common/http';
-import { AuthInterceptor } from './auth.interceptor';  // adjust the path
+import { AuthInterceptor } from './auth.interceptor';
+import { HomeComponent } from './home/home.component';
+import { ServicesComponent } from './services/services.component';
+import { DashboardComponent } from './dashboard/dashboard.component';
+import { AboutusComponent } from './aboutus/aboutus.component';  // adjust the path
 
 @NgModule({
   declarations: [
     AppComponent,
     LoginComponent,
     SignupComponent,
-    WebsiteComponent
+    WebsiteComponent,
+    HomeComponent,
+    ServicesComponent,
+    DashboardComponent,
+    AboutusComponent
   ],
   imports: [
     BrowserModule,MatCardModule,MatFormFieldModule,MatInputModule,MatButtonModule,
