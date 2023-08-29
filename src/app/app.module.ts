@@ -23,7 +23,8 @@ import { AuthInterceptor } from './auth.interceptor';
 import { HomeComponent } from './home/home.component';
 import { ServicesComponent } from './services/services.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
-import { AboutusComponent } from './aboutus/aboutus.component';  // adjust the path
+import { AboutusComponent } from './aboutus/aboutus.component';
+import { DirectivesDirective } from './shared/directives.directive';  // adjust the path
 
 @NgModule({
   declarations: [
@@ -34,7 +35,8 @@ import { AboutusComponent } from './aboutus/aboutus.component';  // adjust the p
     HomeComponent,
     ServicesComponent,
     DashboardComponent,
-    AboutusComponent
+    AboutusComponent,
+    DirectivesDirective
   ],
   imports: [
     BrowserModule,MatCardModule,MatFormFieldModule,MatInputModule,MatButtonModule,
